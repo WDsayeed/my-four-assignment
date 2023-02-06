@@ -79,20 +79,20 @@ const countBadData = findingBadData(ages)
 
 function gemsToDiamond(num1, num2, num3){
 
-        const firstFrndGems = 21;
-        const secondFrndGems = 32;
-        const thirdFrndGems = 43;
+        const firstFrndGemsPow = 21;
+        const secondFrndGemsPow = 32;
+        const thirdFrndGemsPow = 43;
 
-        const firstfrndDiamond = num1 * firstFrndGems;
-        const secondfrndDiamond = num2 * secondFrndGems;
-        const thirdfrndDiamond = num3 * thirdFrndGems;
+        const firstfrndDiamond = num1 * firstFrndGemsPow;
+        const secondfrndDiamond = num2 * secondFrndGemsPow;
+        const thirdfrndDiamond = num3 * thirdFrndGemsPow;
         const totalDiamond = firstfrndDiamond + secondfrndDiamond + thirdfrndDiamond;
 
         if(typeof num1 !== 'number'|| typeof num2 !== 'number'|| typeof num3 !== 'number'){
                 return 'please provide all valid numbers!';
                 }
        
-        else if( totalDiamond >= 2000){
+        else if( totalDiamond > 2000){
                 let restDiamond = totalDiamond - 2000;
                 return restDiamond;
         }
